@@ -99,8 +99,6 @@ A complexidade de tempo do algoritmo de backtracking implementado é **$O(V \tim
 
 Portanto, o número total de operações é proporcional a $V$ (do loop inicial) multiplicado pelo custo de explorar a árvore de busca, que é $V!$. Isso resulta em uma complexidade de pior caso de $O(V \times V!)$.
 
-_Nota:_ Algoritmos mais otimizados usando programação dinâmica (como Held-Karp, para o TSP) alcançam $O(V^2 \times 2^V)$, que ainda é exponencial, mas significativamente mais rápido que $O(V!)$.
-
 ### Aplicação do Teorema Mestre
 
 **Não é possível aplicar o Teorema Mestre** neste algoritmo.
