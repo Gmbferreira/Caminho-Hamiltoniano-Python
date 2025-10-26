@@ -99,7 +99,7 @@ A complexidade de tempo do algoritmo de backtracking implementado é **$O(V \tim
 
 Portanto, o número total de operações é proporcional a $V$ (do loop inicial) multiplicado pelo custo de explorar a árvore de busca, que é $V!$. Isso resulta em uma complexidade de pior caso de $O(V \times V!)$.
 
-_Nota: Algoritmos mais otimizados usando programação dinâmica (como Held-Karp, para o TSP) alcançam $O(V^2 \times 2^V)$, que ainda é exponencial, mas significativamente mais rápido que $O(V!)$._
+_Nota:_ Algoritmos mais otimizados usando programação dinâmica (como Held-Karp, para o TSP) alcançam $O(V^2 \times 2^V)$, que ainda é exponencial, mas significativamente mais rápido que $O(V!)$.
 
 ### Aplicação do Teorema Mestre
 
@@ -126,10 +126,10 @@ Onde $n$ é o número de vértices restantes a visitar. O problema é reduzido e
 
 #### 1. Pior Caso
 
-- **O que é:** Ocorre quando o algoritmo é forçado a explorar a maior parte (ou a totalidade) da árvore de busca $V!$.
-- **Exemplo:** Um **grafo completo** (K*n), onde todos os vértices se conectam a todos os outros. O algoritmo tentará todas as $V!$ permutações de vértices. Outro exemplo é um grafo que \_quase* tem um caminho, mas falha no último vértice, forçando o backtracking a retroceder por toda a árvore.
-- **Complexidade:** $O(V \times V!)$
-- **Impacto:** O desempenho é extremamente lento. O algoritmo se torna computacionalmente inviável para grafos com mais do que um número muito pequeno de vértices (ex: $V > 20$).
+**O que é:** Ocorre quando o algoritmo é forçado a explorar a maior parte (ou a totalidade) da árvore de busca $V!$.
+**Exemplo:** Um **grafo completo** ($K_n$), onde todos os vértices se conectam a todos os outros. O algoritmo tentará todas as $V!$ permutações de vértices. Outro exemplo é um grafo que quase tem um caminho, mas falha no último vértice, forçando o backtracking a retroceder por toda a árvore. permutações de vértices. Outro exemplo é um grafo que \_quase\* tem um caminho, mas falha no último vértice, forçando o backtracking a retroceder por toda a árvore.
+**Complexidade:** $O(V \times V!)$
+**Impacto:** O desempenho é extremamente lento. O algoritmo se torna computacionalmente inviável para grafos com mais do que um número muito pequeno de vértices (ex: $V > 20$).
 
 #### 2. Melhor Caso
 
